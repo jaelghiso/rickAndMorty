@@ -27,6 +27,10 @@
     margin-top: -3px;
     padding: 1.5rem;
     box-shadow: 3px 6px 10px rgba($color-white, 0.2);
+
+    &:hover {
+      box-shadow: 3px 10px 20px rgba($color-black, 0.2);
+    }
   }
   &__title {
     font-family: "Lato", sans-serif;
@@ -42,6 +46,15 @@
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 0.4rem;
+  }
+
+  &:hover {
+    transform: translateY(-3px);
+
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
   }
 }
 
