@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -16,10 +15,6 @@ const Header = () => {
           <span className="heading-primary--main">Rick and Morty </span>
           <span className="heading-primary--sub">Discover our characters</span>
         </h1>
-
-        <Link to={"/top"} className="btn btn--white btn--animated">
-          See our top 5
-        </Link>
       </div>
     </div>
   );
