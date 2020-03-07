@@ -1,0 +1,76 @@
+@media screen and (min-width: 768px) {
+  .cardCharacter {
+    flex: 0 1 calc(33% - 1rem);
+  }
+}
+
+@media screen and (min-width: 991px) {
+  .cardCharacter {
+    flex: 0 1 calc(25% - 1rem);
+  }
+}
+
+.cardCharacter {
+  min-width: 256px;
+
+  &__image {
+    max-width: 100%;
+    border-radius: 8px 8px 0 0;
+    margin: 0;
+  }
+  &__details {
+    min-width: 256px;
+    max-width: 300px;
+    background-color: $color-grey;
+    border-radius: 0 0 8px 8px;
+    margin-bottom: 1rem;
+    margin-top: -3px;
+    padding: 1.5rem;
+    box-shadow: 3px 6px 10px rgba($color-white, 0.2);
+  }
+  &__title {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    color: $color-primary;
+    text-align: start;
+  }
+  &__info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 0.4rem;
+  }
+}
+
+.character__info--heading {
+  color: $color-secondary;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 300;
+  text-align: start;
+}
+
+.character__info--sub {
+  color: $color-primary-light;
+  font-size: 0.8rem;
+  font-size: 700;
+  text-align: end;
+
+  &--isDead {
+    padding: 4px 8px;
+    border-radius: 4px;
+    background-color: #ef7f51;
+    color: $color-white;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  &--icon {
+    height: 20px;
+    padding: 0 0.2rem;
+    align-self: center;
+  }
+}

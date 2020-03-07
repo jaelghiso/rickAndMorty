@@ -1,0 +1,67 @@
+.containerCharacter {
+  max-width: 1088px;
+  margin: 2rem auto;
+}
+
+.cardCharacter__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.containerFilters {
+  max-width: 1088px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .containerFilters {
+    max-width: 600px;
+  }
+  .filters {
+    display: flex;
+    flex-flow: column wrap;
+  }
+  &__title {
+    align-self: flex-start;
+  }
+  &__name {
+    align-self: flex-end;
+  }
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  height: 60px;
+
+  &__title {
+    align-self: center;
+    padding: 5px;
+    margin: 0;
+    color: $color-white;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+  }
+  &__name {
+    @include format-form();
+  }
+  &__gender {
+    @include format-form();
+  }
+  &__options {
+    color: $color-grey-dark;
+  }
+}
+
+.containerPagination {
+  max-width: 1088px;
+  margin: 2rem auto;
+}
+
+.pagination__content {
+  display: flex;
+  justify-content: center;
+}
